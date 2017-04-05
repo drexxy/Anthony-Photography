@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+	<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>-->
 <title>Anthony Prestidge Photgraphy</title>
 </head>
 <body>
@@ -23,16 +24,7 @@
 				<a href="pricing.html"><li>Pricing</li></a>
 				<a href="contact.html"><li>Contact</li></a>
 				<a href="aboutme.html"><li>About Me</li></a>
-				<li class="drop-down-button">Albums
-					<ul class ="drop-down-items">
-						<li>Albums 1</li>
-						<li>Albums 2</li>
-						<li>Albums 3</li>
-						<li>Albums 4</li>
-						<li>Albums 5</li>
-						<li>Albums 6</li>
-					</ul>
-				</li>
+				<a href="albums.html"><li>Albums</li></a>
 				<a href="links.html"><li>Links</li></a>
 				<a href="testimonials.html"><li>Testimonials</li></a>
 			</ul>
@@ -40,12 +32,12 @@
 	</div>
 	<div class="image-gallery">
 		<h2>Welcome to Anthony Prestidge Photography</h2>
-		<div class="container">
-			<div id="slides">
-		<img src="images/portfolio/album pictures/01.jpg"/>
-		<img src="images/portfolio/album pictures/02.jpg"/>
-		<img src="images/portfolio/album pictures/03.jpg"/>
-					</div>
+		<div class="w3-content w3-display-container">
+		<img class="mySlides" src="images/portfolio/album pictures/01.jpg"/>
+		<img class="mySlides" src="images/portfolio/album pictures/02.jpg"/>
+		<img class="mySlides" src="images/portfolio/album pictures/03.jpg"/>
+		<button id="left" onclick="plusDivs(-1)">&#10094;</button>
+		<button id="right"onclick="plusDivs(1)">&#10095;</button>
 		</div>
 	</div>
 	<div class="page-info">

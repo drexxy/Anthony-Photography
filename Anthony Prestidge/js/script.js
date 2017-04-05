@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$('.drop-down-button').click(function(){
+$('.drop-down-button').hover(function(){
 	if ($(this).hasClass('active')){
 		$(this).removeClass('active');
 	}
@@ -9,27 +9,26 @@ $('.drop-down-button').click(function(){
 	}
 })
 
-(function() {
-      $('#slides').slidesjs({
-        width: 940,
-        height: 528,
-        navigation: {
-          effect: "fade"
-        },
-        pagination: {
-          effect: "fade"
-        },
-        effect: {
-          fade: {
-            speed: 400
-          }
-        }
-      });
-    });
-
 });
 
 
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 
 
 
