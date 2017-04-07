@@ -4,6 +4,7 @@
 
 body {
 	width: 900px;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	border: solid black 1px;
@@ -20,11 +21,6 @@ h1{
 a {
 	text-decoration: none;
 	color: black;
-}
-
-img {
-	width: 100%;
-	height: 450px;
 }
 
 
@@ -59,6 +55,11 @@ img {
 	text-align: center;
 }
 
+.mySlides{
+	width: 100%;
+	height: 450px;
+}
+
 .page-info{
 	padding-left: 20px;
 	padding-right: 20px;
@@ -68,6 +69,7 @@ img {
 	text-align: center;
 	font-size: 10px; 
 	clear: both;
+	margin-top: -10px;
 }
 
 
@@ -97,24 +99,62 @@ img {
 	display: block;
 }
 
-.album-calculator div {
-	/*border: solid 1px black;*/
+.album-gallery img {
+	width: 400px;
+	height: 300px;
+	margin: 25px 22px 25px 22px;
+	border: 1px solid black;
+
 }
 
+.album-gallery ul{
+	list-style: none;
+	margin: 0px 20px 25px 20px;
+}
+
+.album-gallery li{
+	display: inline-block;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+	width: 300px;
+	margin-left: 40px;
+	margin-right: 55px; 
+}
+
+
 .size-selector {
-	width: 400px;
+	width: 300px;
 	padding: 0px 10px 0px 20px;
 	float: left;
+	margin-left: 40px;
 }
 
 .cover-selector {
-	width: 400px;
+	width: 300px;
 	padding: 1px 10px 0px 20px;
-	margin-left: 440px;
+	margin-left: 500px;
 }
 
 .album-calculator p {
 	clear: both;
 	text-align: center
 }
-	
+
+.left-pricing {
+	width: 400px;
+	float: left;
+	margin-left: 40px;
+	border: solid black 1px;
+}
+
+.left-pricing h2 , h4 {
+	text-align: center;
+}
+
+
+.right-pricing {
+	width: 400px;
+	margin-left: 450px;
+	border: solid black 1px;
+}

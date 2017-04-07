@@ -11,33 +11,8 @@ $('.drop-down-button').hover(function(){
 
 //Calculator of album costs
 $('.album-calculator').click(function(){
-var albumSize = $('input[name=size]:checked').val();
-
-switch (albumSize) {
-  case "18x12":
-    var albumCost = 260.00;
-    break;
-  case "14x10":
-    var albumCost = 198.00;
-    break;
-  case "12x8":
-    var albumCost = 163.00;
-    break;
-  case "12x12":
-    var albumCost = 200.00;
-    break;
-  case "10x10":
-    var albumCost = 166.00;
-    break;
-  case "8x8":
-    var albumCost = 126.00;
-    break;
-  case "8x6":
-    var albumCost = 107.00;
-    break;
-  default:
-    var albumCost = 0;
-}
+var albumPick = $('input[name=size]:checked').val();
+var albumCost = parseInt(albumPick);
 
 var albumCover = $('input[name=cover]:checked').val();
 
