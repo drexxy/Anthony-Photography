@@ -1,151 +1,151 @@
 $(document).ready(function() {
 //Drop-down Menu
-$('.drop-down-button').hover(function(){
-	if ($(this).hasClass('active')){
-		$(this).removeClass('active');
-	}
-	else {
-		$(this).addClass('active');
-	}
-})
+    $('.drop-down-button').hover(function(){
+    	if ($(this).hasClass('active')){
+    		$(this).removeClass('active');
+    	}
+    	else {
+    		$(this).addClass('active');
+    	}
+    })
 
-//Calculator of album costs
-$('.album-calculator').click(function(){
-var albumPick = $('input[name=size]:checked').val();
-var albumCost = parseInt(albumPick);
+    //Calculator of album costs
+    $('.album-calculator').click(function(){
+    var albumPick = $('input[name=size]:checked').val();
+    var albumCost = parseInt(albumPick);
 
-var albumCover = $('input[name=cover]:checked').val();
+    var albumCover = $('input[name=cover]:checked').val();
 
-if (albumCost === 260.00){
-  switch (albumCover) {
-    case "leather":
-    var coverCost = 0;
-    break;
-    case "acrylic":
-    var coverCost = 80;
-    break;
-    case "metal":
-    var coverCost = 120;
-    break;
-    case "canvas":
-    var coverCost = 80;
-    break;
-    default:
-    var coverCost = 0;
-  }
-}
-else if (albumCost === 198.00){
-  switch (albumCover) {
-    case "leather":
-    var coverCost = 0;
-    break;
-    case "acrylic":
-    var coverCost = 60;
-    break;
-    case "metal":
-    var coverCost = 90;
-    break;
-    case "canvas":
-    var coverCost = 60;
-    break;
-    default:
-    var coverCost = 0;
-  }
-}
-else if (albumCost === 163.00){
-  switch (albumCover) {
-    case "leather":
-    var coverCost = 0;
-    break;
-    case "acrylic":
-    var coverCost = 50;
-    break;
-    case "metal":
-    var coverCost = 80;
-    break;
-    case "canvas":
-    var coverCost = 50;
-    break;
-    default:
-    var coverCost = 0;
-  }
-}
-else if (albumCost === 200.00){
-  switch (albumCover) {
-    case "leather":
-    var coverCost = 0;
-    break;
-    case "acrylic":
-    var coverCost = 60;
-    break;
-    case "metal":
-    var coverCost = 90;
-    break;
-    case "canvas":
-    var coverCost = 60;
-    break;
-    default:
-    var coverCost = 0;
-  }
-}
-else if (albumCost === 166.00){
-  switch (albumCover) {
-    case "leather":
-    var coverCost = 0;
-    break;
-    case "acrylic":
-    var coverCost = 50;
-    break;
-    case "metal":
-    var coverCost = 80;
-    break;
-    case "canvas":
-    var coverCost = 50;
-    break;
-    default:
-    var coverCost = 0;
-  }
-}
-else if (albumCost === 126.00){
-  switch (albumCover) {
-    case "leather":
-    var coverCost = 0;
-    break;
-    case "acrylic":
-    var coverCost = 40;
-    break;
-    case "metal":
-    var coverCost = 70;
-    break;
-    case "canvas":
-    var coverCost = 40;
-    break;
-    default:
-    var coverCost = 0;
-  }
-}
-else if (albumCost === 107.00){
-  switch (albumCover) {
-    case "leather":
-    var coverCost = 0;
-    break;
-    case "acrylic":
-    var coverCost = 40;
-    break;
-    case "metal":
-    var coverCost = 70;
-    break;
-    case "canvas":
-    var coverCost = 40;
-    break;
-    default:
-    var coverCost = 0;
-  }
-}
+    if (albumCost === 260.00){
+      switch (albumCover) {
+        case "leather":
+        var coverCost = 0;
+        break;
+        case "acrylic":
+        var coverCost = 80;
+        break;
+        case "metal":
+        var coverCost = 120;
+        break;
+        case "canvas":
+        var coverCost = 80;
+        break;
+        default:
+        var coverCost = 0;
+      }
+    }
+    else if (albumCost === 198.00){
+      switch (albumCover) {
+        case "leather":
+        var coverCost = 0;
+        break;
+        case "acrylic":
+        var coverCost = 60;
+        break;
+        case "metal":
+        var coverCost = 90;
+        break;
+        case "canvas":
+        var coverCost = 60;
+        break;
+        default:
+        var coverCost = 0;
+      }
+    }
+    else if (albumCost === 163.00){
+      switch (albumCover) {
+        case "leather":
+        var coverCost = 0;
+        break;
+        case "acrylic":
+        var coverCost = 50;
+        break;
+        case "metal":
+        var coverCost = 80;
+        break;
+        case "canvas":
+        var coverCost = 50;
+        break;
+        default:
+        var coverCost = 0;
+      }
+    }
+    else if (albumCost === 200.00){
+      switch (albumCover) {
+        case "leather":
+        var coverCost = 0;
+        break;
+        case "acrylic":
+        var coverCost = 60;
+        break;
+        case "metal":
+        var coverCost = 90;
+        break;
+        case "canvas":
+        var coverCost = 60;
+        break;
+        default:
+        var coverCost = 0;
+      }
+    }
+    else if (albumCost === 166.00){
+      switch (albumCover) {
+        case "leather":
+        var coverCost = 0;
+        break;
+        case "acrylic":
+        var coverCost = 50;
+        break;
+        case "metal":
+        var coverCost = 80;
+        break;
+        case "canvas":
+        var coverCost = 50;
+        break;
+        default:
+        var coverCost = 0;
+      }
+    }
+    else if (albumCost === 126.00){
+      switch (albumCover) {
+        case "leather":
+        var coverCost = 0;
+        break;
+        case "acrylic":
+        var coverCost = 40;
+        break;
+        case "metal":
+        var coverCost = 70;
+        break;
+        case "canvas":
+        var coverCost = 40;
+        break;
+        default:
+        var coverCost = 0;
+      }
+    }
+    else if (albumCost === 107.00){
+      switch (albumCover) {
+        case "leather":
+        var coverCost = 0;
+        break;
+        case "acrylic":
+        var coverCost = 40;
+        break;
+        case "metal":
+        var coverCost = 70;
+        break;
+        case "canvas":
+        var coverCost = 40;
+        break;
+        default:
+        var coverCost = 0;
+      }
+    }
 
-var total = (coverCost + albumCost + 50);
-document.getElementById("total").innerHTML = "£" + total;
-})
+    var total = (coverCost + albumCost + 50);
+    document.getElementById("total").innerHTML = "£" + total;
+    })
 
 });
 
