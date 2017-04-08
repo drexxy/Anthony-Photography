@@ -51,17 +51,22 @@ p, a, li, h1, h2, h3, h4, h5, h6, button{
 	font-family: Georgia, serif;
 }
 
-html, body {
-	min-height: 100%;
+html{
+	background-image: url("../images/minimal-background-pattern-wordpress-2.jpg");
+}
+
+html {
+  height: 100%;
 }
 
 body {
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	border: solid black 1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-top: 10px;
 	margin-bottom: 10px;
+	background-color: white;
 }
 
 main {
@@ -69,14 +74,25 @@ main {
 	margin-top: 50px;
 }
 
-h1{
-	display: fixed;
-	text-align: center;
-	font-size: 50px;
-	height: 60px
+h2 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 20px;
 }
 
-a {
+
+.heading h1{
+	display: fixed;
+	text-align: center;
+	font-size: 60px;
+	height: 80px;
+	padding-top: 20px;
+}
+
+/*navbar*/
+
+ .navbar a {
 	text-decoration: none;
 	color: black;
 }
@@ -98,42 +114,19 @@ a {
 	text-align: center; 
     padding: 4px 6px;
     text-decoration: none;
-    background-color: #D5D5D5;
+    background: #D5D5D5;;
+  	background: -webkit-linear-gradient(left, #D5D5D5,#ECECEC); 
+  	background: -o-linear-gradient(right, #D5D5D5, #ECECEC);
+  	background: -moz-linear-gradient(right, #D5D5D5, #ECECEC);
+  	background: linear-gradient(to right, #D5D5D5, #ECECEC); 
     font-size: 15px;
     width: 90px;
-
 }
 
 .navbar li:hover {
-	background-color: #FFFFFF
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.image-gallery {
-	margin-top: 100px;
-	text-align: center;
-}
-
-.mySlides{
-	width: 100%;
-	height: 450px;
-	display: block;
-}
-
-.hidden-slide {
-	display: none;
-}
-
-.page-info{
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.footer{
-	text-align: center;
-	font-size: 10px; 
-	clear: both;
-}
-
 
 .drop-down-button {
 	position: relative;
@@ -161,6 +154,60 @@ a {
 	display: block;
 }
 
+/*image gallery*/
+
+.image-gallery {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.image-gallery h2 {
+	margin-bottom: 50px;
+}
+
+.mySlides{
+	width: 100%;
+	height: 450px;
+	display: block;
+}
+
+.hidden-slide {
+	display: none;
+}
+
+button {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.page-info{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.page-info p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*footer*/
+
+.footer{
+	text-align: center;
+	font-size: 10px; 
+	margin-top: 10px;
+}
+
+
+/*Album*/
+
+.album-description h4 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .album-gallery img {
 	width: 400px;
 	height: 300px;
@@ -180,7 +227,7 @@ a {
 	color: black;
 	text-align: center;
 	width: 300px;
-	margin-left: 40px;
+	margin-left: 55px;
 	margin-right: 55px; 
 }
 
@@ -203,16 +250,22 @@ a {
 	text-align: center
 }
 
+/*Pricing*/
+
 .left-pricing {
 	width: 400px;
-	float: left;
+	display: inline-block;
 	margin-left: 40px;
-	border: solid black 1px;
 	padding-left: 10px;
 }
 
 .left-pricing ul {
 	list-style-type: square;
+}
+
+.left-pricing li {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .left-pricing h2 , h4 {
@@ -222,6 +275,110 @@ a {
 
 .right-pricing {
 	width: 400px;
-	margin-left: 450px;
+	display: inline-block;
+}
+
+.right-pricing p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*links*/
+
+.links-page {
+	text-align: center;
+}
+
+.links-page h2, h4, a{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.links-page a {
+	color: black;
+}
+
+.music {
+	margin-top: 10px;
+	border-bottom: solid 2px black;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 20px;
+
+}
+
+.video{
+	margin-top: 20px;
+	border-bottom: solid 2px black;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 20px;
+}
+
+.car-service {
+	margin-top: 20px;
+	border-bottom: solid 2px black;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 20px;
+}
+
+.photography {
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+/*testimonials*/
+
+
+.testimonial-1{
+	height: 300px;
+	border: solid 1px black;
+}
+
+.testimonial-1 p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.testimonial-2{
+	height: 300px;
 	border: solid black 1px;
+}
+
+.testimonial-2 p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.testimonial-3{
+	height: 300px;
+	border: solid 1px black;
+}
+
+.testimonial-3 p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.testimonials img {
+	height: 200px;
+	width: 150px;
+	margin-left: 50px;
+	margin-right: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.testimonial-info {
+	display: inline-block;
+	border: solid 1px black;
+	width: 650px;
+	height: 300px;
+}
+
+.testimonial-info h4 {
+	width: 250px;
+	margin-left: 200px;
+
 }
