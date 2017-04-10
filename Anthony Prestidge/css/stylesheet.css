@@ -114,9 +114,18 @@ main {
 .navbar ul{
 	
 	list-style-type: none;
-    margin-left: 20px;
+    text-align: center;
     padding: 0; 
 
+}
+
+.navbar a{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+	padding: 4px 6px;
+	box-sizing: border-box;
 }
 
 .navbar li{
@@ -125,7 +134,7 @@ main {
 	border: 1px solid black;
 	border-radius: 2px;
 	text-align: center; 
-    padding: 4px 6px;
+    padding: 0;
     text-decoration: none;
     background: #D5D5D5;;
   	background: -webkit-linear-gradient(left, #D5D5D5,#ECECEC); 
@@ -133,7 +142,7 @@ main {
   	background: -moz-linear-gradient(right, #D5D5D5, #ECECEC);
   	background: linear-gradient(to right, #D5D5D5, #ECECEC); 
     font-size: 15px;
-    width: 90px;
+    width: 100px;
 }
 
 .navbar li:hover {
@@ -163,7 +172,7 @@ main {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 150px;
-	margin-left: -60px;
+	margin-left: -25px;
 }
 
 .active ul{
@@ -480,3 +489,13 @@ button {
 	vertical-align: top;
 	text-align: center;
 }
+
+.gallery-top a {
+	text-decoration: none;
+	color: black;
+} 
+
+.gallery-bottom a {
+	text-decoration: none;
+	color: black;
+} 
