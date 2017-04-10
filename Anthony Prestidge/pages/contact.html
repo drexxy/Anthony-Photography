@@ -27,7 +27,7 @@
 				</li>
 				<a href="pricing.html"><li>Pricing</li></a>
 				<a href="contact.html"><li>Contact</li></a>
-				<a href="aboutme.html"><li>About Me</li></a>
+				<a href="about.html"><li>About Me</li></a>
 				<a href="albums.html"><li>Albums</li></a>
 				<a href="links.html"><li>Links</li></a>
 				<a href="testimonials.html"><li>Testimonials</li></a>
@@ -56,20 +56,5 @@
 	</div>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src='../js/script.js'></script>
-	<script> 
-var contactIndex = 0;
-carousel();
-
- function carousel() {
-    var j;
-    var y = document.getElementsByClassName("carousel-img");
-    for (j = 0; j < y.length; j++) {
-        y[j].style.display = "none";
-    }
-    contactIndex++;
-    if (contactIndex > y.length) {contactIndex = 1}
-    y[contactIndex-1].style.display="block";
-    setTimeout(carousel, 5000);    
- };</script>
 </body>
 </html>

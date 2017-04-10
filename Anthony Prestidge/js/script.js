@@ -147,10 +147,22 @@ $(document).ready(function() {
     document.getElementById("total").innerHTML = "£" + total;
     })
 
+var contactIndex = 0;
+carousel();
+
+ function carousel() {
+    var j;
+    var y = document.getElementsByClassName("carousel-img");
+    for (j = 0; j < y.length; j++) {
+        y[j].style.display = "none";
+    }
+    contactIndex++;
+    if (contactIndex > y.length) {contactIndex = 1}
+    y[contactIndex-1].style.display="block";
+    setTimeout(carousel, 3000);    
+ };
+
 });
-
-
-
 
 //Image Slideshow
 var slideIndex = 1;
@@ -170,4 +182,6 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+
 

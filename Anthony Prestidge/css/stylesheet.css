@@ -137,30 +137,33 @@ main {
 }
 
 .navbar li:hover {
-	background-color: #FFFFFF;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .drop-down-button {
 	position: relative;
+	padding-top:10px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .drop-down-items {
 	position: absolute; 
-	top: 25px;
-	right: 0px;
+	top: 24px;
 	display: none;
 }
 
 .drop-down-items ul {
+	text-align: center;
 }
 
 .drop-down-items li {
-	display: block;
-	width: 90px;
+	display: inline-block;
 	border-radius: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	width: 150px;
+	margin-left: -60px;
 }
 
 .active ul{
@@ -179,9 +182,12 @@ main {
 }
 
 .mySlides{
-	width: 100%;
+	width: 860px;
 	height: 450px;
 	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hidden-slide {
@@ -417,4 +423,60 @@ button {
 .phone {
 	border-bottom: 2px solid black;
 	padding-bottom: 20px;
+}
+
+/*about*/
+
+.about-container img {
+	width: 400px;
+	margin-left: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: inline-block;
+}
+
+.about-info {
+	display: inline-block;
+	width: 450px;
+	vertical-align: top;
+}
+
+.about-info h5 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+/* Gallerys */
+
+.gallery-top img {
+	width: 150px;
+	margin-left: 36px;
+	margin-right: 36px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gallery-bottom img {
+	width: 150px;
+	margin-left: 36px;
+	margin-right: 36px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 20px;
+}
+
+.gallery-top li{
+	width: 150px;
+	display: inline-block;
+	margin-left: 36px;
+	margin-right: 36px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.gallery-bottom li{
+	width: 150px;
+	display: inline-block;
+	margin-left: 36px;
+	margin-right: 36px;
+	vertical-align: top;
+	text-align: center;
 }
