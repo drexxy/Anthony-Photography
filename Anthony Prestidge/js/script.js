@@ -9,8 +9,29 @@ $(document).ready(function() {
     	}
     })
 
-    //Calculator of album costs
+if($('body').is('.album-page')){
+albumCalculator();
     $('.album-calculator').click(function(){
+        albumCalculator();
+    })
+}
+
+var contactIndex = 0;
+carousel();
+
+ function carousel() {
+    var j;
+    var y = document.getElementsByClassName("carousel-img");
+    for (j = 0; j < y.length; j++) {
+        y[j].style.display = "none";
+    }
+    contactIndex++;
+    if (contactIndex > y.length) {contactIndex = 1}
+    y[contactIndex-1].style.display="block";
+    setTimeout(carousel, 3000);    
+ };
+
+ function albumCalculator() {
     var albumPick = $('input[name=size]:checked').val();
     var albumCost = parseInt(albumPick);
 
@@ -145,28 +166,14 @@ $(document).ready(function() {
 
     var total = (coverCost + albumCost + 50);
     document.getElementById("total").innerHTML = "£" + total;
-    })
-
-var contactIndex = 0;
-carousel();
-
- function carousel() {
-    var j;
-    var y = document.getElementsByClassName("carousel-img");
-    for (j = 0; j < y.length; j++) {
-        y[j].style.display = "none";
     }
-    contactIndex++;
-    if (contactIndex > y.length) {contactIndex = 1}
-    y[contactIndex-1].style.display="block";
-    setTimeout(carousel, 3000);    
- };
+})
 
-});
+//Slide-Gallery
 
-//Image Slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
+
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -182,6 +189,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
 
 
 
