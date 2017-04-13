@@ -9,15 +9,11 @@ $(document).ready(function() {
     	}
     })
 
-if($('body').is('.album-page')){
-albumCalculator();
-    $('.album-calculator').click(function(){
-        albumCalculator();
-    })
-}
-
+//Contact Page Carousel
 var contactIndex = 0;
-carousel();
+if($('body').is('.contact-page')){
+    carousel();
+}
 
  function carousel() {
     var j;
@@ -30,6 +26,15 @@ carousel();
     y[contactIndex-1].style.display="block";
     setTimeout(carousel, 3000);    
  };
+
+//Album Calculator for album page
+
+ if($('body').is('.album-page')){
+albumCalculator();
+    $('.album-calculator').click(function(){
+        albumCalculator();
+    })
+}
 
  function albumCalculator() {
     var albumPick = $('input[name=size]:checked').val();
