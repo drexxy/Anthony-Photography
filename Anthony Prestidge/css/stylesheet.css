@@ -182,20 +182,29 @@ main {
 /*image gallery*/
 
 .image-gallery {
-	margin-top: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	max-height: 60%;
 }
 
 .image-gallery h2 {
-	margin-bottom: 50px;
+	margin-bottom: 25px;
+}
+
+.gallery{
+	height: 600px;
+	max-width: 100%;
 }
 
 .mySlides{
-	width: 860px;
-	height: 450px;
 	display: block;
-	margin-left: 20px;
-	margin-right: 20px;
+	max-height: 100%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -470,15 +479,15 @@ button {
 
 .gallery-top img {
 	width: 150px;
-	margin-left: 36px;
-	margin-right: 36px;
+	margin-left: 70px;
+	margin-right: 70px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gallery-bottom img {
 	width: 150px;
-	margin-left: 36px;
-	margin-right: 36px;
+	margin-left: 70px;
+	margin-right: 70px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-top: 20px;
 }
@@ -486,8 +495,8 @@ button {
 .gallery-top li{
 	width: 150px;
 	display: inline-block;
-	margin-left: 36px;
-	margin-right: 36px;
+	margin-left: 70px;
+	margin-right: 70px;
 	vertical-align: top;
 	text-align: center;
 }
@@ -495,8 +504,8 @@ button {
 .gallery-bottom li{
 	width: 150px;
 	display: inline-block;
-	margin-left: 36px;
-	margin-right: 36px;
+	margin-left: 70px;
+	margin-right: 70px;
 	vertical-align: top;
 	text-align: center;
 }
